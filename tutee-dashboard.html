@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutee Dashboard - TutorCove</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Tutoring Service</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Tutee Profile</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <img src="girl.jpg" alt="Tutee Picture" class="rounded-circle mb-3" width="120" height="120">
+                        <h5>Ridhi Bairi</h5>
+                        <p>Email: ridhibairi_28@gmail.com</p>
+                        <a href="#" class="btn btn-warning">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h5>Upcoming Sessions</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>DSA 22CSC08</strong> with <em>Lokineni Vamshika</em>
+                                <span class="badge bg-secondary float-end">Feb 15, 2025 - 2:00 PM</span>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>COA 22CSC10</strong> with <em>Harshil Reddy</em>
+                                <span class="badge bg-secondary float-end">Feb 17, 2025 - 10:00 AM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">View All Sessions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5>Search Tutors</h5>
+                    </div>
+                    <div class="card-body">
+                        <form action="search-results.html" method="GET">
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="e.g., Math, Physics" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="rating" class="form-label">Minimum Rating</label>
+                                <input type="number" class="form-control" id="rating" name="rating" min="1" max="5" placeholder="1 to 5" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Search Tutors</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h5>Recommended Tutors</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>LAC (22MTC01)</strong> with <em>Shraddha P</em>
+                                <span class="badge bg-secondary float-end">Rating: 4.8</span>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>OSP (22PYC01)</strong> with <em>Sarah L</em>
+                                <span class="badge bg-secondary float-end">Rating: 4.5</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="tutor-list.html" class="btn btn-warning">View All Tutors</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5>Your Feedback</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>Here are your feedbacks and reviews from tutors.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <strong>LAC (22MTC01):</strong> "Great explanations, very helpful!" - <em>Goli Meenakshi</em>
+                            </li>
+                            <li class="list-group-item">
+                                <strong>OSP (22PYC01):</strong> "Clear and concise. Highly recommended!" - <em>Maithili Nanda</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
