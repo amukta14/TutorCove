@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TutorCove</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            background-image: url('bg.jpg'); /* Background image */
+            background-size: cover;
+            color: black;
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 500;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            padding: 15px;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #0069d9 !important;
+            font-weight: 600;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #004c8c !important;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            border: none;
+        }
+
+        .btn-primary:hover,
+        .btn-secondary:hover {
+            background-color: #0056b3;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            margin-top: 50px;
+            padding: 0 15px;
+        }
+
+        .features-section {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .feature-item {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .feature-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.8rem;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Video Section */
+        .video-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            margin-top: 50px;
+        }
+
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+        }
+
+        .testimonial-section {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .testimonial-item {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            background-color: #f1f1f1;
+            margin: 20px;
+        }
+
+        .testimonial-item h4 {
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <header>
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <!-- Adjust logo size by specifying width -->
+                    <img src="CBIT.png" alt="CBIT Logo" style="width: 390px;" /> <!-- Adjust the width to your desired size -->
+                    <div>
+                    <h1>TutorCove</h1>
+                    <p>Introducing CBIT's first-ever peer tutoring service.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="cbitlogo.png" alt="CBIT Logo"> Student Tutoring Service
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div class="container text-center mt-5">
+        <h2>Find Your Perfect Tutor</h2>
+        <p>Browse through a variety of subjects and tutors to find the perfect match for your learning needs.</p>
+
+       
+        <a href="tutor-dashboard.html" class="btn btn-primary m-3">Become a Tutor</a>
+        <a href="tutee-dashboard.html" class="btn btn-secondary m-3">Find a Tutor</a>
+    </div>
+
+   
+    <div class="container features-section">
+        <h2>Why Choose TutorCove?</h2>
+        <p>We make learning easy, accessible, and fun!</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <img src="tutor.jpg" alt="Personalized Learning">
+                    <h3>Personalized Learning</h3>
+                    <p>Get the help you need with tailored sessions that match your learning style and pace.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <img src="support.jpg" alt="Peer Support">
+                    <h3>Peer Support</h3>
+                    <p>Our tutors are your fellow CBIT students who understand your academic journey.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-item">
+                    <img src="flexible.jpg" alt="Flexible Scheduling">
+                    <h3>Flexible Scheduling</h3>
+                    <p>Book sessions that fit your schedule—online or in-person, at times that work for you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-section">
+        <div class="container video-container">
+            <h3>Watch How TutorCove Works</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8Lr1leQH2zc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+               
+        </div>
+    </div>
+
+    <div class="container testimonial-section">
+        <h2>What Our Students Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <h4>Rahul Sharma</h4>
+                    <p>"TutorCove helped me improve my grades in just a few weeks. The tutors are amazing!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <h4>Amukta Yajamanyam</h4>
+                    <p>"I love the flexibility of scheduling sessions and the peer-to-peer support is incredible!"</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-item">
+                    <h4>Maithili Nanda</h4>
+                    <p>"The personalized learning experience is exactly what I needed. Highly recommended!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2025 TutorCove | All Rights Reserved</p>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
