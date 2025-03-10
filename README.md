@@ -1,6 +1,7 @@
 TutorCove - Peer Tutoring Platform at CBIT
 
 TutorCove is a platform designed for peer-to-peer tutoring at CBIT. It connects students who need help with those who can provide academic support.
+Link to website: https://tutor-cove.vercel.app/
 
 Features 
 - Find tutors for various subjects.  
